@@ -1,0 +1,27 @@
+package com.saiteja.bogade.letschat.core.files.logout;
+
+/**
+ * Created by saite_000 on 2/20/2017.
+ */
+
+public interface LogoutContract {
+    interface View {
+        void onLogoutSuccess(String message);
+
+        void onLogoutFailure(String message);
+    }
+
+    interface Presenter {
+        void logout();
+    }
+
+    interface Interactor {
+        void performFirebaseLogout();
+    }
+
+    interface OnLogoutListener {
+        void onSuccess(String message);
+
+        void onFailure(String message);
+    }
+}
