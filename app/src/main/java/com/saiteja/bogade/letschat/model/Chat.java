@@ -14,6 +14,11 @@ public class Chat {
     public Chat() {
     }
 
+    public Chat(String senderUid, String receiverUid) {
+        this.senderUid = senderUid;
+        this.receiverUid = receiverUid;
+    }
+
     public Chat(String sender, String receiver, String senderUid, String receiverUid, String message, long timestamp) {
         this.sender = sender;
         this.receiver = receiver;
@@ -70,4 +75,6 @@ public class Chat {
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
     }
+
+
 }
